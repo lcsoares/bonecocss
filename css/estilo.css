@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	
+}
+header{
+	width: 100%;
+	height: 60px;
+	background-color: #357365;
+	padding: 10px;
+	text-align: #cecece;
+	color: white;
+	font-weight: 400px;
+	border-bottom: 1px solid black;
+	box-shadow: 1px 1px 10px 1px black;
+}
+section{
+	width: 90%;
+	margin: auto;
+}
+section header{
+	background-color: #fff;
+	text-align: center;
+	color: #cecece;
+	font-size: 30px;
+}
+article{
+
+	width: 500px;
+	margin: 130px auto auto auto;
+	border-radius: 60px;
+	background-color: #357365;
+}
+
+.cara{
+	width: 405px;
+	height: 400px;
+	margin: 60px auto auto auto;
+
+	
+}
+.olho{
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	background-color: black;
+	margin: auto;
+	position: relative;
+	display: inline-block;
+}
+.circulo-do-olho{
+	top:60px;
+	left: 40px;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	background-color: white;
+	animation-name: olhos;
+	animation-duration: 5s;
+	animation-iteration-count:infinite;
+	animation-direction: alternate; 
+}
+.boca {
+	width: 300px;
+	height: 100px;
+	margin: 50px auto auto auto;
+}
+.labios{
+	position: relative;
+}
+.labio{
+
+	display: block
+	width: 100%;
+	height: 50px;
+	background-color: #581a1a;
+	border:1px solid black;
+	border-radius: 100px;
+
+}
+.lingua{
+	top:50px;
+	left: 100px;
+	position: absolute;
+	width: 100px;
+	height: 5px;
+	border-bottom: 80px solid red;
+	background-color: red;
+	border-radius: 0px 0px 50px 50px;
+	z-index: 99 ;
+	animation-name: lingua;
+	animation-duration: 3s;
+	animation-iteration-count:infinite;
+	animation-direction: alternate; 
+}
+@keyframes lingua{
+	0%{border-bottom: 0px solid red;}
+	100%{border-bottom: 80px solid red;}
+}
+@keyframes olhos{
+	0%{top:60px;left: 40px;}
+	
+	100%{top:70;left: 124px;}
+}
