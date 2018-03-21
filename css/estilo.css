@@ -32,6 +32,7 @@ article{
 	margin: 130px auto auto auto;
 	border-radius: 60px;
 	background-color: #357365;
+	box-shadow: -10px 10px 30px ;
 }
 
 .cara{
@@ -39,7 +40,19 @@ article{
 	height: 400px;
 	margin: 60px auto auto auto;
 
-	
+}
+.cara:hover .circulo-do-olho{
+	height: 0px;
+	border-radius: 0px;
+	animation-name: none;
+}
+.cara:hover .olho{
+	margin: 150px auto auto auto;
+	height: 50px;
+	border-radius: 0px;
+}
+.cara:hover .lingua{
+	display: none;
 }
 .olho{
 	width: 200px;
