@@ -37,11 +37,7 @@ article{
 	
 	
 }
-article:active{
-	transform:rotate(20deg);
-	transition: 1s;
-	
-}
+
 
 .cara{
 	width: 405px;
