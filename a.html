@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Treinando Javascript</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+<header>
+	<h1> Treinando Javascript</h1>
+</header>
+
+<main>
+	<section class="section-a">
+		<article class="article-a">
+			<form>
+				<label for="Valor">Digite o número que deseja converter para binário:
+					<input type="text" id="Valor-decimal"name="Valor" value="">
+				</label>
+				<p id="resultado"></p>
+				<input type="submit" onclick="converterBinario()" class="button ">
+			</form>			
+		</article>
+		
+	</section>
+
+</main>
+
+</body>
+<script>
+
+
+
+function converterBinario () {
+		numero = 10;
+		var vetor = [];
+		var i =numero;
+	 	while(numero>0){
+
+ 		var resto = Math.floor(numero % 2);
+ 		vetor[i] = resto;
+ 		console.log(resto);
+ 		 
+ 		numero= Math.floor(numero/2);
+
+ 		console.log(numero);
+ 		i--;
+ 		console.log(i)
+ 	}
+ 	document.getElementById("resultado").innerHTML = ,vetor;
+ 	
+ }
+ 
+ 
+ 	
+</script>
+</html>
